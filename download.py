@@ -281,8 +281,8 @@ if __name__ == '__main__':
     description = 'Helper script for downloading and trimming kinetics videos.'
     p = argparse.ArgumentParser(description=description)
     p.add_argument('--output_dir', type=str, required=False,
-                   help='Output directory where videos will be saved.', default='/home/josmy/kinetics-download-prep/val_videos')
-    p.add_argument('--input_csv', type=str, default='/home/josmy/kinetics-download-prep/ava_kinetics_csv/val.csv',
+                   help='Output directory where videos will be saved.', default='all_videos')
+    p.add_argument('--input_csv', type=str, default='videos_to_download.csv',
                    help=('CSV file containing the following format: '
                          'YouTube Identifier,Start time,End time,Class label'))
     p.add_argument('-f', '--trim-format', type=str, default='%06d',
